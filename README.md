@@ -11,10 +11,12 @@ python3 path_to_main
 
 start the private network with (hopefully):
 
+```bash
 sudo nmcli device wifi hotspot ifname wlan0 \
   con-name iot-hotspot \
   ssid E-TabelNet \
   password "TempEPass"
+```
 
 the MQTT broker is reachabble via the ip of the RPi findable wit ```ip a``` command, the port is 1883 so for example 10.xxx.xxx.x:1883
 
