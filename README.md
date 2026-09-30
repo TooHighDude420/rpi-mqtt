@@ -10,7 +10,6 @@ python3 path_to_main
 ```
 
 start the private network with (hopefully):
-
 ```bash
 sudo nmcli device wifi hotspot ifname wlan0 \
   con-name iot-hotspot \
@@ -20,7 +19,7 @@ sudo nmcli device wifi hotspot ifname wlan0 \
 
 the MQTT broker is reachabble via the ip of the RPi findable wit ```ip a``` command, the port is 1883 so for example 10.xxx.xxx.x:1883
 
-Put this on the ESP32 and test if it works, it should show "i am connected" from the ESP32 in the output on the terminal
+Put this on the ESP32 and test if it works, it should show "i am connected" on the RPi
 ```c++ 
 #include <WiFi.h>
 #include <PubSubClient.h>
