@@ -1,4 +1,4 @@
-Run the docker container on the RPi
+Run the docker container on the RPi dont use -d or you wont see the output of the ESP!!!
 
 or do it manually with:
 ```bash
